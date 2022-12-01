@@ -1,0 +1,12 @@
+Beginning of DOM intoduction Note
+
+1. Dom means document object model
+2. It's possible to create HTML elements using Javascript
+3. dom is a programming interface for HTML
+4. application, programs can change document structure, style and content.
+5. it is possible to select elements from the page, manipulate them update them.
+6. it is possible to add events
+7. we can create fully interactive web application
+8. querySelector(" ") is used to select element
+9. selection can be done anyway like example, class(.example), id(#example), element(div)
+10. To select text content within a element using 'textContent'
