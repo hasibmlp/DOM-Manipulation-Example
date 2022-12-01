@@ -1,0 +1,8 @@
+Dom selections
+
+1. document object is collection of page elements, constructd by browser
+2. We can breakdown into DOM and select the perticular property
+3. multiple element with same class, it will only select first it finds
+4. using 'querySelectorAll' will return node list of all elements
+5. it'll thrown an error if treid to point absent element.
+6. we can select all available elements using forEach loop 
