@@ -1,1 +1,4 @@
 Beginning of DOM intoduction Note
+
+1. Dom means document object model
+2. It's possible to create HTML elements using Javascript
