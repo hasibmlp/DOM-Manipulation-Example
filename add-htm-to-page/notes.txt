@@ -1,0 +1,6 @@
+    Adding Html to Page
+
+    1. we can add styling on the page depending on the condition.
+    2. Math.random() used to generate random numbers
+    3. toString() is used to convert into toString
+    4. 
