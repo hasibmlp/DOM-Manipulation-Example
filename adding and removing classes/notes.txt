@@ -1,0 +1,11 @@
+    Adding and removing classes in javaScript
+
+    1. classList provides to create or delete classes
+    2. To add a class to an element using classList.add('className').
+    3. using classList.remove to remove a class
+    4. classList.toggle removes class if it has it or add if it does'nt have it 
+    5. You can get attribute of elements using getAttribute("attribute-name(class,id,disabled"))
+    6. You can add multiple classes using setAttributes (id as well)
+    7. it is possible to set as much attributes we want using setAttribute(properties, value)
+    8.we can set id using (.) , element.id = 'new-value'
+    9. contains('class') checks that it contain class
