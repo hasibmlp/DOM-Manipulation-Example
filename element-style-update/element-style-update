@@ -1,0 +1,5 @@
+Element style update 
+
+1. It is possible to add new elemet using innerHtml property in Javascript.
+2. we make sure that we selectd right element in colsole.
+3. it is possible to style directly using style property
