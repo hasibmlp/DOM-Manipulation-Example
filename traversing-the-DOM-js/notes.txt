@@ -1,0 +1,11 @@
+    Traversing the DOM js
+
+    1. it's possible to select parent or child using one element 
+    2. it's possible to navigate through the child node or parent node or siblings node using one element as starting point
+    3. You can navigate though the DOM tree and selecting related elements
+    4. To get all childer element either used childNodes or childern
+    5. childNodes returns elements with white spaces included in source code (white spaces in HTML)
+    6. childNode retrun array value
+    7. children returns only elements it contains but not as array value (we can't use forEach method in it)
+    8.
+    9. 
