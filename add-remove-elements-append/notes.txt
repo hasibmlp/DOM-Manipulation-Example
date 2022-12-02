@@ -1,0 +1,12 @@
+    Adding Removing Elements Append
+
+    1. It's possible to create elemetns to page separate from HTML
+    2. Method is createElement('div') - string value of parameter of the element
+    3. Using append() function to append the element into page
+    4. prepend() puts element first available spot
+    5. append() puts last available spot
+    6. it's possible to append element out of container and put to other
+        eg: document.body.append('element to be appended');
+    7.appendchild() is used to if you need to callback element
+    8.insertbefore('element1-to-be-appended','which-element-to-be-inserted-before) is used to insert before another element
+    9. create text nodes createTextNode('hello world');
