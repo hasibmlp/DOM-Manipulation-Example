@@ -1,0 +1,11 @@
+    Keyboard events in js
+
+    1. it's possible to highlight an element using focus & blur events
+    2. change events triggered only when the elements modified
+    3. keydown eventsListeners used to record the keys pressed
+    4. keyup eventsListeners used to update the events on screen
+    5. All the keys in keyboard are listened including enter and ArrowDown, ArrowUp etc..
+    6. 
+    7. 
+    8. 
+    9. 

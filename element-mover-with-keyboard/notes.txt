@@ -1,0 +1,11 @@
+Element Mover with keyboard
+
+    1. it's possible to move element using keyboard event 
+    2. changing value of absolute position of a element 
+    3. style obj is used to change the absolute postion of element
+    4. postion of element can be changed using arrow keys
+    5. 
+    6. 
+    7. 
+    8. 
+    9. 

@@ -1,0 +1,11 @@
+    Add animation Frame 
+
+    1. It's possible to add smooth movement using boolean values to arrow keys
+    2. while triggrring keydown event the code of specfied arrow keys set to true
+    3. while triggrring keyup event the code of specfied arrow keys set to false
+    4. it's possible to add animation frame that can track the movement
+    5. using requestAnimationFrame we can run an function continuesly
+    6. 
+    7. 
+    8. 
+    9. 

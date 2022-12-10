@@ -1,0 +1,11 @@
+    More Event Listeners in JavaScript
+
+    1. mouse events are handled using addEventListeners
+    2. mouseover, mouseenter, mouseout, mousemove are examples of mouse eventsListeners
+    3. mouseover triggered when ever element or childredn of elements are pointed inside div
+    4. mouseenter only tigger only once when mouse pointer enter the div
+    5. mouseout tirgger's only mouse get outside of div
+    6. mousemove triggered multiple time while keep moving mouse pointer inside whole div
+    7. there are mutliple other mouse events like wheel
+    8. wheel tracks the mouse wheel
+    9. 

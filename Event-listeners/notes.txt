@@ -1,0 +1,11 @@
+    Event Listeners in JavaScript
+
+    1. It's possible to add event Listeners to each element using their parent object
+    2. event listeners are added using element obj and looping through each element using foreach looping
+    3. it's possible to remove event listeners using removeListeners('event','obj') by specifying which obj and which event
+    4. it's possible to add event clickable only once by setting {once: ture} obj
+    5. it's possible to modify each element using event listeners like adding or removing classes or adding counter
+    6. it's possible to set event listener to exactly required element by specifying event listeners in it's obj inside event obj.
+    7. it's possible to dynamically add elements that are clicable to page
+    8.
+    9. 
