@@ -2,18 +2,24 @@ const gameArea = document.querySelector(".game-area");
 
 document.addEventListener("DOMContentLoaded", init);
 game = {
-  row: 5,
-  col: 7,
+  row: 10,
+  col: 20,
   arr: [],
   ani: {},
-  max: 20,
+  max: 2,
   actives: 0,
   inPlay: false,
   gameBtn: {},
+  hit: 0,
+  miss: 0,
+  dif: 3,
 };
 
 function init() {
+  game.max = 7 - game.dif;
   gameArea.innerHtml = "";
+  const temp = `Score ${game.hit} Miss ${game.miss}`;
+  game.scoreBoard = createNewElement(gameArea, "div", temp, "score-board");
   game.gameBtn = createNewElement(gameArea, "button", "Start", "btn");
   game.gameBtn.addEventListener("click", () => {
     if (game.gameBtn.textContent == "Start") {
@@ -32,11 +38,26 @@ function init() {
 
 function startGame() {
   const total = game.max > game.arr.lenght ? game.arr.lenght : game.max;
-  if (game.actives < total) {
+  const temp = Math.floor(Math.random() * 103);
+  if (game.actives < total && temp > 50 + game.dif * 10) {
     game.actives++;
     makeActive(makeSelection());
   }
   if (game.inPlay) {
+    game.arr.forEach((el) => {
+      if (el.counter > 0) {
+        el.counter--;
+        // el.textContent = el.counter;
+        let temp = Math.ceil(Number(el.counter) / 10) / 10;
+        el.style.opacity = temp;
+        if (el.counter <= 0) {
+          removeActives(el);
+          game.miss++;
+          updateScore();
+        }
+      }
+    });
+
     game.ani = requestAnimationFrame(startGame);
   }
 }
@@ -50,14 +71,15 @@ function makeActive(el) {
     return makeActive(makeSelection());
   } else {
     el.classList.add("active");
-    const timer = Math.floor(Math.random() * 4000) + 5000;
-    setTimeout(removeActives, timer, el);
+    el.counter = Math.floor(Math.random() * 100) + 75 + game.dif * 25;
+    // setTimeout(removeActives, timer, el);
     return true;
   }
 }
 
 function removeActives(myEle) {
-  console.log(myEle);
+  myEle.counter = 0;
+  myEle.textContent = "-";
   myEle.classList.remove("active");
   game.actives--;
 }
@@ -71,7 +93,8 @@ function buildGrid(main) {
         dim.x += " auto ";
       }
       const cell = y * game.col + x + 1;
-      const ele = createNewElement(main, "div", cell, "grid-item");
+      const ele = createNewElement(main, "div", "-", "grid-item");
+      ele.counter = 0;
       ele.addEventListener("click", hitButton);
       game.arr.push(ele);
     }
@@ -82,12 +105,20 @@ function buildGrid(main) {
   function hitButton(e) {
     el = e.target;
     if (el.classList.contains("active")) {
+      game.hit++;
       console.log("hit");
+      updateScore();
       removeActives(el);
     } else {
+      game.miss++;
+      updateScore();
       console.log("miss");
     }
   }
+}
+function updateScore() {
+  const temp = `Score ${game.hit} Miss ${game.miss}`;
+  game.scoreBoard.textContent = temp;
 }
 function createNewElement(parent, ele, html, myClass) {
   const el = document.createElement(ele);

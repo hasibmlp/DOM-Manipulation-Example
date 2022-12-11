@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Clickers</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       .active {
-        cursor: pointer;
+        cursor: pointere;
         background-color: red;
+      }
+      .score-board {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        padding: 10px;
       }
       .btn {
         display: block;
@@ -17,14 +28,15 @@
         width: 25%;
         font-size: 1.5rem;
       }
+
       .grid-container {
         display: grid;
       }
       .grid-item {
-        border: 1px solid black;
+        color: white;
         padding: 15px;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1em;
       }
       .bgColor {
         background-color: red;

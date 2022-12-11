@@ -3,8 +3,8 @@ Game Clickers
     1. it's possible to trigger a function when everithing is ready like text area is ready using eventListeners DOMContentLoaded 
     2. To make a website more flexible and usefull create main global objs at top and create functions for repeated query like creating elements etc..
     3. using (app.js*18) {const cell = y * game.col + x + 1;} program to set counting to each boxes in grid
-    4. 
-    5. 
+    4. creating fully responsive container using grid in js
+    5. it's possible to track the elements within objects
     6. 
     7. 
     8. 
